@@ -29,7 +29,10 @@ function getSum(a, b) {
 }
 
 //Elegant Solution 
-let getSum = (a, b) =>
+// let getSum = (a, b) =>
+
+
+console.log(getSum(0, -1));
 
 
 
