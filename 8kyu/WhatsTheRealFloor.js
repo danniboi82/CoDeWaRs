@@ -13,6 +13,9 @@
 function getRealFloor(n){
     if(n <= 0) return n;
     if(n < 13) return n - 1;
-    if(n >= 13) return n - 1;
+    if(n >= 13) return n - 2;
 }
 
+console.log(getRealFloor(15)); // expect 13
+console.log(getRealFloor(5));  // expect 4
+console.log(getRealFloor(-14)); // expect -14
