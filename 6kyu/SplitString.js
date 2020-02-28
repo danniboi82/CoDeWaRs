@@ -7,8 +7,9 @@
 // solution('abcdef') // should return ['ab', 'cd', 'ef']
 
 //Naive Solution
-function solution(str){
+function solution(str) {
     return str.split(/([a-z][a-z])/gi)
         .filter(Boolean)
-            .map(char => char.length % 2 === 0 ? char : `${char}_`);
- }
+        .map(char => char.length % 2 === 0 ? char : `${char}_`);
+}
+
