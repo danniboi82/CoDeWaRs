@@ -9,14 +9,28 @@
 
 
 
-function pattern(n, row = 0, output = '') {
-    if(n === row) return;
+// function pattern(n) {
+// let output = '';
+// for(let i = 1; i <= n; i++){
+//     if(i === n){
+//         console.log(output);
 
-    if(n === output.length) {
-        console.log(output);
-        pattern(n, row + 1);
+//         output += `${String(i).repeat(i)}`;
+//         continue;
+//     }
+//     output += `${String(i).repeat(i)}\n`;
+// }
+// console.log(output);
+// }
+
+function pattern (n){
+    let output = [];
+    for(let i = 1; i <= n; i++){
+        output.push(Array(i + 1));
+
+
     }
-
-    const add = output.length <= row ? row : ' ';
-    pattern(n, row, output + add);
+    console.log(output);
 }
+
+pattern(5);
